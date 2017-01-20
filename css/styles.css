@@ -1,0 +1,28 @@
+.container {
+  background-color: #E8DBA6;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+#leftbar {
+  margin-top: 100px;
+  width: 300px;
+  float: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #93C490;
+  padding: 2px;
+}
+
+#rightcontent {
+  margin-top: 100px;
+  margin-left: 300px;
+  padding: 10px;
+}
+
+body {
+    background-color: #D6DDD5;
+}
