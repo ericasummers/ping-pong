@@ -1,9 +1,22 @@
-var pingpong = function(inputNumber) {
 var numarray = [];
+
+var pingpong = function(inputNumber) {
   for (var currentNumber = 1; currentNumber <= inputNumber; currentNumber += 1) {
+    if ((currentNumber % 3) === 0) {
+      numarray.push("ping");
+    } else if ((currentNumber % 5) === 0) {
+      numarray.push("pong");
+    } else if ((currentNumber % 15) === 0) {
+      numarray.push("ping-pong");
+    }
   	numarray.push(currentNumber);
   }
   return numarray;
+}
+var displaynumber = function() {
+  for (var i = 0; i < numarray.length; i++) {
+    return "<li>" + numarray[i] + "</li>";
+  }
 }
 
 
@@ -18,14 +31,13 @@ $(document).ready(function() {
     var fivepattern = /multiplefive/ig;
     var fifteenpattern = /multiplefifteen/ig;
 
-
     if (!inputNumber) {
     alert("Please enter a number!");
     } else if (inputNumber === NaN) {
     alert("Please enter a number!");
     }
 
-    $("#result").append("<li>" + result + "</li>");
+    $("#result").append(result);
 
   });
 });
