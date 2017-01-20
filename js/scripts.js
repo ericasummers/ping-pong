@@ -8,8 +8,9 @@ var pingpong = function(inputNumber) {
       numarray.push("pong");
     } else if ((currentNumber % 15) === 0) {
       numarray.push("ping-pong");
+    } else {
+      numarray.push(currentNumber);
     }
-  	numarray.push(currentNumber);
   }
   return numarray;
 }
