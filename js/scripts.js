@@ -1,8 +1,11 @@
 var pingpong = function(inputNumber) {
+var numarray = [];
   for (var currentNumber = 1; currentNumber <= inputNumber; currentNumber += 1) {
-  	return(currentNumber);
+  	numarray.push(currentNumber);
   }
+  return numarray;
 }
+
 
 
 $(document).ready(function() {
@@ -16,14 +19,13 @@ $(document).ready(function() {
     var fifteenpattern = /multiplefifteen/ig;
 
 
-    $("#result").text(result);
-
     if (!inputNumber) {
-      alert("Please enter a number!");
+    alert("Please enter a number!");
     } else if (inputNumber === NaN) {
-      alert("Please enter a number!");
+    alert("Please enter a number!");
     }
 
+    $("#result").append("<li>" + result + "</li>");
 
-  })
-})
+  });
+});
