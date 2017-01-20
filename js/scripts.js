@@ -38,7 +38,7 @@ $(document).ready(function() {
     alert("Please enter a number!");
     }
 
-    $("#result").append(result);
+    $("#result").append("<li>" + result + "</li>");
 
   });
 });
