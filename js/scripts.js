@@ -1,9 +1,8 @@
 var pingpong = function(inputNumber) {
   for (var currentNumber = 1; currentNumber <= inputNumber; currentNumber += 1) {
-  	alert(currentNumber);
+  	return(currentNumber);
   }
 }
-
 
 
 $(document).ready(function() {
@@ -11,10 +10,20 @@ $(document).ready(function() {
     event.preventDefault();
     var inputNumber = parseInt($("input#enternumber").val());
     var result = pingpong(inputNumber);
-    $("#result").text("currentNumber");
+
+    var threepattern = /multiplethree/ig;
+    var fivepattern = /multiplefive/ig;
+    var fifteenpattern = /multiplefifteen/ig;
+
+
+    $("#result").text(result);
 
     if (!inputNumber) {
       alert("Please enter a number!");
+    } else if (inputNumber === NaN) {
+      alert("Please enter a number!");
     }
+
+
   })
 })
