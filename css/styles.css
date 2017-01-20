@@ -3,11 +3,12 @@
   margin: 0px;
   padding: 0px;
   text-align: center;
+  width: 100%;
 }
 
 #leftbar {
   margin-top: 100px;
-  width: 300px;
+  width: 25%;
   float: left;
   position: fixed;
   left: 0;
@@ -19,7 +20,7 @@
 
 #rightcontent {
   margin-top: 100px;
-  margin-left: 300px;
+  margin-left: 25%;
   padding: 10px;
 }
 

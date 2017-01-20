@@ -1,11 +1,20 @@
-var inputNumber = parseInt(prompt("Please enter a whole number"));
-
-for (var currentNumber = 1; currentNumber <= inputNumber; currentNumber += 1) {
-	alert(currentNumber);
+var pingpong = function(inputNumber) {
+  for (var currentNumber = 1; currentNumber <= inputNumber; currentNumber += 1) {
+  	alert(currentNumber);
+  }
 }
 
+
+
 $(document).ready(function() {
-  $("form#pingpongnumber").click(function(event) {
+  $("button#clicksubmit").click(function(event) {
     event.preventDefault();
+    var inputNumber = parseInt($("input#enternumber").val());
+    var result = pingpong(inputNumber);
+    $("#result").text("currentNumber");
+
+    if (!inputNumber) {
+      alert("Please enter a number!");
+    }
   })
 })
