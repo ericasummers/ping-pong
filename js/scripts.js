@@ -15,23 +15,20 @@ var pingpong = function(inputNumber) {
 }
 
 
-
-
 $(document).ready(function() {
   $("button#clicksubmit").click(function(event) {
     event.preventDefault();
     var inputNumber = parseInt($("input#enternumber").val());
     var result = pingpong(inputNumber);
 
+    for (var i in result) {
+    $("#result").prepend("<li>" + result[i] + "</li>");
+    }
 
     if (!inputNumber) {
       alert("Please enter a number!");
     } else if (inputNumber === NaN) {
       alert("Please enter a number!");
-    } else {
-      for (var i in result) {
-      $("#result").append("<li>" + result[i] + "</li>");
-      }
     }
 
   });
