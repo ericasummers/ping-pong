@@ -6,6 +6,11 @@
   width: 100%;
 }
 
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
 #leftbar {
   margin-top: 100px;
   width: 25%;
@@ -18,12 +23,21 @@
   padding: 2px;
 }
 
+#leftbar h3 {
+  color: #ECE5B0;
+  font-weight: bold;
+}
+
+#leftbar p {
+  font-size: 20px;
+}
+
 #rightcontent {
-  margin-top: 100px;
+  margin-top: 20px;
   margin-left: 25%;
   padding: 10px;
 }
 
 body {
-    background-color: #D6DDD5;
+    background-color: #E0DFD9;
 }
