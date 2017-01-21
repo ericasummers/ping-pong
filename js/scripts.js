@@ -21,12 +21,11 @@ $(document).ready(function() {
     var inputNumber = parseInt($("input#enternumber").val());
     var result = pingPong(inputNumber);
 
+    $("#result").empty();
+
     for (var i in result) {
     $("#result").append("<li>" + result[i] + "</li>");
     }
-    $("#result").children("li").first().click(function() {
-      $(this).remove();
-    });
 
 
     if (!inputNumber) {
