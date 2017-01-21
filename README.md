@@ -36,7 +36,7 @@ _This is a webpage that takes any given whole number entered and displays a list
 
 3. During the creation of the array in the previous step, as the webpage is counting numbers up to the entered number, it will substitute relevant numbers as indicated by the JavaScript, as follows:
 
-_If the number is divisible by 3 with no remainder, it will add the value "ping" to the array instead of the number. If the number is divisible by 5 with no remainder, it will add the value "pong" to the array instead of the number. If the number is divisible by 15 with no remainder, it will add the value "ping-pong" to the array instead of the number._
+If the number is divisible by 3 with no remainder, it will add the value "ping" to the array instead of the number. If the number is divisible by 5 with no remainder, it will add the value "pong" to the array instead of the number. If the number is divisible by 15 with no remainder, it will add the value "ping-pong" to the array instead of the number.
 
   #### _Input Example: 5_
   #### _Output Example: [1,2,ping,4,pong]_
