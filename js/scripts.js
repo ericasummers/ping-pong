@@ -1,24 +1,19 @@
-var numarray = [];
-
 var pingpong = function(inputNumber) {
+  var numarray = [];
   for (var currentNumber = 1; currentNumber <= inputNumber; currentNumber += 1) {
-    if ((currentNumber % 3) === 0) {
-      numarray.push("ping");
+    if ((currentNumber % 15) === 0) {
+      numarray.push("ping-pong");
     } else if ((currentNumber % 5) === 0) {
       numarray.push("pong");
-    } else if ((currentNumber % 15) === 0) {
-      numarray.push("ping-pong");
+    } else if ((currentNumber % 3) === 0) {
+      numarray.push("ping");
     } else {
       numarray.push(currentNumber);
     }
   }
   return numarray;
 }
-var displaynumber = function() {
-  for (var i = 0; i < numarray.length; i++) {
-    return "<li>" + numarray[i] + "</li>";
-  }
-}
+
 
 
 
@@ -28,17 +23,16 @@ $(document).ready(function() {
     var inputNumber = parseInt($("input#enternumber").val());
     var result = pingpong(inputNumber);
 
-    var threepattern = /multiplethree/ig;
-    var fivepattern = /multiplefive/ig;
-    var fifteenpattern = /multiplefifteen/ig;
 
     if (!inputNumber) {
-    alert("Please enter a number!");
+      alert("Please enter a number!");
     } else if (inputNumber === NaN) {
-    alert("Please enter a number!");
+      alert("Please enter a number!");
+    } else {
+      for (var i in result) {
+      $("#result").append("<li>" + result[i] + "</li>");
+      }
     }
-
-    $("#result").append("<li>" + result + "</li>");
 
   });
 });
