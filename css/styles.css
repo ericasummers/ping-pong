@@ -20,7 +20,7 @@ h1 {
   top: 0;
   bottom: 0;
   background-color: #93C490;
-  padding: 2px;
+  padding: 20px;
 }
 
 #leftbar h3 {
@@ -31,6 +31,11 @@ h1 {
 #leftbar p {
   font-size: 20px;
   color: white;
+}
+
+#leftbar a {
+  font-size: 18px;
+  color: #4D79A8;
 }
 
 #rightcontent {
