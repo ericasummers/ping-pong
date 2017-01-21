@@ -24,14 +24,15 @@ $(document).ready(function() {
     for (var i in result) {
     $("#result").append("<li>" + result[i] + "</li>");
     }
+    $("#result").children("li").first().click(function() {
+      $(this).remove();
+    });
+
 
     if (!inputNumber) {
       alert("Please enter a number!");
     } else if (inputNumber === NaN) {
       alert("Please enter a number!");
     }
-
-  
-
   });
 });
